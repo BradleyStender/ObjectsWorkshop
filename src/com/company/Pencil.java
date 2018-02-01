@@ -8,7 +8,23 @@ public class Pencil {
     private String color;
     private boolean isMechanical;
 
+    public Pencil(double leadSize, String brand, boolean hasEraser, String color, boolean isMechanical) {
+        this.leadSize = leadSize;
+        this.brand = brand;
+        this.hasEraser = hasEraser;
+        this.color = color;
+        this.isMechanical = isMechanical;
+    }
+
+    public Pencil(double leadSize, String brand, String color, boolean isMechanical) {
+        this.leadSize = leadSize;
+        this.brand = brand;
+        this.color = color;
+        this.isMechanical = isMechanical;
+    }
+
     public double getLeadSize() {
+
         return leadSize;
     }
 
